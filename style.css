@@ -1,0 +1,48 @@
+body {
+    background: #0f1419;
+    font-family: system-ui, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+}
+
+.title {
+    padding: 20px;
+    border-bottom: 1px solid #2f3336;
+}
+
+.post {
+    border-bottom: 1px solid #2f3336;
+    padding: 14px 16px;
+}
+
+.post:hover {
+    background: #16181c;
+}
+
+.post-text {
+    font-size: 18px;
+    line-height: 1.4;
+    white-space: pre-wrap;
+}
+
+.post-date {
+    color: #71767b;
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.actions {
+    margin-top: 8px;
+}
+
+.share {
+    color: #1d9bf0;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
