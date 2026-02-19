@@ -1,0 +1,20 @@
+<textarea id="text" maxlength="280"></textarea>
+<button onclick="post()">Post</button>
+
+<script>
+async function post() {
+    const content = document.getElementById("text").value;
+
+    await fetch("https://YOURPROJECT.supabase.co/rest/v1/posts", {
+        method: "POST",
+        headers: {
+            "apikey": "YOUR_PRIVATE_SERVICE_ROLE_KEY",
+            "Authorization": "Bearer YOUR_PRIVATE_SERVICE_ROLE_KEY",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ content })
+    });
+
+    alert("Posted!");
+}
+</script>
